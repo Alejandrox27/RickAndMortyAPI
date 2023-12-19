@@ -9,34 +9,29 @@
     <script src="script.js"></script>
 </head>
 <body>
-    <main class="container my-5">
+    <div class="background">
+        <main class="container my-5">
 
-        <h1 class="text-center">Rick and Morty characters</h1>
-        <!-- Spinner cargando -->
-        <section class="d-flex align-items-center d-none">
-            <strong>Loading...</strong>
-            <div class="spinner-border ms-auto" role="status" aria-hideen="true"></div>
-        </section>
+            <h1 class="text-center">Rick and Morty characters</h1>
+            <!-- Spinner cargando -->
+            <section class="d-flex align-items-center d-none" id="loading">
+                <strong>Loading...</strong>
+                <div class="spinner-border ms-auto" role="status" aria-hideen="true"></div>
+            </section>
 
-        <section class="row" id="dinamic-cards">
+            <section class="row" id="dinamic-cards">
 
-            <template id="card-template">
-                <article class="col-12 col-md-6 col-lg-3 mb-3">
-                    <div class="card text-center shadow">
-                        <img alt="" class="card-img-top">
-                        <div class="card-body">
-                            <h5 class="card-title text-primary lead">
-                                nombre personaje
-                            </h5>
-                            <p class="lead text-secondary">Human</p>
-                        </div>
-                    </div>
-                </article>
-            </template>
-            
-        </section>
+            </section>
 
-    </main>
+            <section class="d-flex justify-content-around align-items-center" id="buttons d-flex">
+                <button class="btn btn-primary px-5" id="start">Start</button>
+                <button class="btn btn-primary px-5" id="before">Before</button>
+                <button class="btn btn-primary px-5" id="next">Next</button>
+                <button class="btn btn-primary px-5" id="final">Final</button>
+            </section>
+
+        </main>
+    </div>
 
 </body>
 </html>
